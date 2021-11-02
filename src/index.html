@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<html>
+<header>
+
+    <title> Login </title>
+    <meta charset = UTF-8" />
+    <link rel = "stylesheet" href = "./style.css">
+</header>
+
 <body>
     <p> Slt les amis ceci est un test </p>
 
@@ -6,13 +14,15 @@
         Test pour les bouttons / Interactions avec le serv
     </div>
 
-    <div>
-        <form>
-            <label forName ="login"> Login </label>
-            <input name="login" placeholder="username">
+    <div id = "login-container" >
+        <form action = "connect.php">
+            <div id = "login-inputs">
+                <label forName ="login"> Login </label>
+                <input name="login" placeholder="Enter Username">
 
-            <label forName ="password"> Mot de passe </label>
-            <input name="password" placeholder="********" type = "password">
+                <label forName ="password"> Mot de passe </label>
+                <input name="password" placeholder="Your Password" type = "password">
+            </div>
 
             <button type = "submit" id = "buttonON"> Connect </button>
         </form>
