@@ -1,1 +1,1 @@
-# Project Mail
+# Project Mail + server streaming
