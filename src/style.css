@@ -14,7 +14,7 @@
 #login-container {
     background-color: aquamarine;
     text-align: center;
-    display-model: block;
+    display: block;
 
 }
 
