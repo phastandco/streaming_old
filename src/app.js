@@ -74,5 +74,3 @@ on.onclick = allumage;
 */
 
 //url https://ianime-fr.com/voir-one-piece-episode-[NUMBER]-vostfr/
-=======
->>>>>>> 40aeaef266d814830ee3e69b33f9966cca0d83d7
