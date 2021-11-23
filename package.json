@@ -1,9 +1,33 @@
 {
+  "name": "webmail",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "license": "MIT",
   "dependencies": {
+    "7": "^0.0.1",
+    "@types/koa": "^2.13.4",
     "koa": "^2.13.4",
     "npm": "^8.1.3"
   },
   "scripts": {
     "start": "nodemon run -p 3000"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "description": "login + auth + opdl + streaming",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phastandco/webMail.git"
+  },
+  "keywords": [
+    "login",
+    "secu"
+  ],
+  "author": "Hugz",
+  "bugs": {
+    "url": "https://github.com/phastandco/webMail/issues"
+  },
+  "homepage": "https://github.com/phastandco/webMail#readme"
 }
