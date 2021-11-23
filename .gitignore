@@ -1,7 +1,7 @@
 node_modules
 videos
 .idea
-
+*.mp4
 # Compiled source #
 ###################
 *.com
