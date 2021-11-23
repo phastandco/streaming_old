@@ -5,13 +5,17 @@
   "main": "src/app.js",
   "license": "MIT",
   "dependencies": {
+<<<<<<< HEAD
     "7": "^0.0.1",
     "@types/koa": "^2.13.4",
+=======
+>>>>>>> 40aeaef266d814830ee3e69b33f9966cca0d83d7
     "koa": "^2.13.4",
     "npm": "^8.1.3"
   },
   "scripts": {
     "start": "nodemon run -p 3000"
+<<<<<<< HEAD
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
@@ -30,4 +34,7 @@
     "url": "https://github.com/phastandco/webMail/issues"
   },
   "homepage": "https://github.com/phastandco/webMail#readme"
+=======
+  }
+>>>>>>> 40aeaef266d814830ee3e69b33f9966cca0d83d7
 }

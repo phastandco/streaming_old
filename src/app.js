@@ -45,14 +45,34 @@ app.listen(3000)
 
 /**
 var on = document.getElementById("buttonON");
+=======
+import Koa, { HttpError } from 'koa'
+>>>>>>> 40aeaef266d814830ee3e69b33f9966cca0d83d7
 
-function allumage ()
-{
-alert("je suis ON");
-console.log("OUI OUI");
-};
+const app = Koa()
 
+app.listen(3000)
+
+app.use('/api', [...req, res]  = ()=> {
+    HTMLBodyElement('<h1> hello les gens </h1>')
+})
+
+function ON (){
+    var allumage = document.getElementById("buttonON");
+
+    function allumage ()
+    {
+    alert("je suis ON");
+    console.log("OUI OUI");
+    };
+
+    allumage.onclick = allumage;
+}
+
+<<<<<<< HEAD
 on.onclick = allumage;
 */
 
 //url https://ianime-fr.com/voir-one-piece-episode-[NUMBER]-vostfr/
+=======
+>>>>>>> 40aeaef266d814830ee3e69b33f9966cca0d83d7

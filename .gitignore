@@ -1,5 +1,5 @@
 node_modules
-videos
+videos/
 .idea
 *.mp4
 
@@ -40,3 +40,5 @@ videos
 .Trashes
 ehthumbs.db
 Thumbs.db
+=======
+>>>>>>> 40aeaef266d814830ee3e69b33f9966cca0d83d7
