@@ -72,6 +72,7 @@ app.on('error', (err) => {
 app.listen(3000)
 
 //JWT pour ne pas avoir à savoir si le seveur peut envoyer les vidéos (ça c'est le boulot d'un autre seveur qui se connecte à la bdd)
+//en fait non car bdd au même endroit que le back lol
 
 /**
 var on = document.getElementById("buttonON");
