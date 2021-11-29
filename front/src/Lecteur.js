@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import ReactPlayer from "react-player";
+import NumericInput from "react-numeric-input";
 
 function Lecteur () {
     const [number, setNumber] = useState(700);
@@ -11,13 +12,17 @@ function Lecteur () {
     return (
         <div className="Lecteur">
             <header className="Lecteur-header "/>
-            <button onClick = {() => setNumber(number - 1)}>previous</button>
-            <ReactPlayer
-                url= {source}
-                playing = "true"
-                controls = "true"
-            />
-            <button onClick = {() => setNumber(number + 1)}>next</button>
+            
+            <NumericInput className="form-control"/>
+            <div className = "player_previous_next">
+                <button onClick = {() => setNumber(number - 1)}>previous</button>
+                <ReactPlayer
+                    url= {source}
+                    playing = "true"
+                    controls = "true"
+                />
+                <button onClick = {() => setNumber(number + 1)}>next</button>
+            </div>
             <p>
                 Voici la pièce {number}
             </p>
