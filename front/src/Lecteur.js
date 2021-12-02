@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ReactPlayer from "react-player";
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid'
+import { InputNumber } from 'rsuite';
+
 
 function Lecteur () {
     const [number, setNumber] = useState(700);
@@ -11,10 +12,17 @@ function Lecteur () {
     return (
         <div className="Lecteur">
             <header className="Lecteur-header "/>
+            <InputNumber 
+            defaultValue = {number}
+            min = "1"
+            max = "730"
+            scrollable = "true"
+            onChange = {(value) => setNumber(value)}
+            />
+
             <button onClick = {() => setNumber(number - 1)}>previous</button>
             <ReactPlayer
                 url= {source}
-                playing = "true"
                 controls = "true"
             />
             <button onClick = {() => setNumber(number + 1)}>next</button>
