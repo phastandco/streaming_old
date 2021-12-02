@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css';
 import Lecteur from "./Lecteur";
+import 'rsuite/dist/rsuite.min.css';
 
 function App() {
   return (

@@ -34,8 +34,12 @@ app.use(async ({request, response, state}, next) => {
 
     //infos du token JWT
     console.log("Etat : ", state.user)
+<<<<<<< HEAD:app.js
+    //Resolve pour la videos dans le dossier videos du lenovo depuis lenovo
+=======
     
     //Liens vers le dossier du lenovo
+>>>>>>> Main:src/app.js
     const video = resolve("D:/1P ep", request.query.video)
     console.log("Notre chemin vers la vidéo : ", video)
 
