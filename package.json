@@ -12,7 +12,7 @@
     "npm": "^8.1.4"
   },
   "scripts": {
-    "back": "nodemon"
+    "start": "nodemon"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
