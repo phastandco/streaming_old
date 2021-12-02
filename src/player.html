@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- OLD -->
+    <!-- OLD -->
+    <!-- OLD -->
+<head>
+<link rel = "stylesheet" href = "./player.css" />
+    <meta charset="UTF-8">
+    <meta name = "viewport"
+          content = "width = device-width, user-scalable = no, initial-scale = 1.0, maximum-scale = 1.0, minimum-scale = 1.0">
+    <meta http-equiv="X-UA-compatible" content = "ie-edge">
+    <title>Une pièce</title>
+</head>
+<body>
+
+    <h2>Ici on retrouve les vidéos sur les plus grands des trésors</h2>
+    <div id = "player">
+    <button id = "previous" onclick = "previous()"><-</button>
+             <video id = "lavid" src = "http://localhost:3000/api/onepiece?video=one%20piece%20700.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.ozg5fxQeyDOTjcpdESPccXCNYTYJmIOzYBNFYOzBM8Y"
+             width = "400" height= "300" controls></video>
+        <button id = "next" onClick = "next()">-></button>
+    </div>
+
+    <script type = "text/javascript">
+        var source = document.getElementById("lavid").src
+        var url1 = "http://localhost:3000/api/onepiece?video=one%20piece%20"
+        var url2 = ".mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.ozg5fxQeyDOTjcpdESPccXCNYTYJmIOzYBNFYOzBM8Y"
+        var num = 700     
+
+        console.log("lavid avant : ", source)
+        
+        function previous() {
+            num -= 1
+            location.href = [url1 + num + url2]
+        }
+
+        function next() {
+            num += 1
+            window.location.href(url1 + num + url2);
+            location.href = location[url1 + num + url2]
+        }
+
+        
+        //source.innerHTML(url)
+        //source = url
+        console.log("lavid après : ", source)
+
+    </script>
+</body>
+</html>
