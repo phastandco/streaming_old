@@ -4,6 +4,7 @@ import {createReadStream, stat} from 'fs'
 import {promisify} from 'util'
 import jwt from 'koa-jwt'
 
+// localhost:3000/api/onepiece?video=D:/1P%20ep/one%20piece%1
 const app = new Koa()
 
 app.use(({request, response}, next) => {
@@ -34,17 +35,7 @@ app.use(async ({request, response, state}, next) => {
 
     //infos du token JWT
     console.log("Etat : ", state.user)
-<<<<<<< HEAD:app.js
-    //Resolve pour la videos dans le dossier videos du lenovo depuis lenovo
-=======
-    
-    //Liens vers le dossier du lenovo
->>>>>>> Main:src/app.js
     const video = resolve("D:/1P ep", request.query.video)
-    console.log("Notre chemin vers la vidéo : ", video)
-
-    const range = request.header.range
-    console.log("Request Headers Range : ", range)
 
     if (!range) {
         response.type = extname(video)
